@@ -9,13 +9,15 @@ html {
 }
 
 .page {
+  display: grid;
+  place-items: center;
   margin: auto;
   color: #fff;
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   background-color: #1b1919;
   inline-size: 1200px;
-  block-size: 800px;
+  block-size: 100%;
 }
 
 h1,
@@ -57,9 +59,6 @@ fieldset {
   display: flex;
   align-items: flex-end;
   gap: 30px;
-  padding-inline: 30px;
-  padding-block: 133px;
-  block-size: 100%;
 }
 
 .result__video-container {
