@@ -93,16 +93,16 @@ fieldset {
   display: flex;
   align-items: center;
   width: max-content;
-  cursor: pointer;
   padding: 1px;
+  cursor: pointer;
 }
 
 .search-form__textfield {
   border: 0;
   border-block: 1px solid #fff;
   padding: 0;
-  font: inherit;
   color: rgb(255 255 255 / 0.7);
+  font: inherit;
   background-color: transparent;
   appearance: none;
   -moz-appearance: none;
@@ -134,18 +134,17 @@ fieldset {
 
 .search-form__checkbox:checked + .search-form__pseudo-checkbox::before {
   content: '';
-  position: absolute;
-  inset: 2px;
-  background-color: #fff;
   z-index: 2;
+  display: block;
+  background-color: #fff;
+  inline-size: 15px;
+  block-size: 15px;
 }
 
 .search-form__pseudo-checkbox {
-  position: relative;
+  z-index: 1;
   display: grid;
   place-items: center;
-  z-index: 1;
-  display: inline-block;
   margin-inline-end: 5px;
   border: 1px solid #fff;
   inline-size: 19px;
@@ -153,13 +152,13 @@ fieldset {
 }
 
 .search-form__label-text::after {
-  display: block;
   content: '';
+  display: block;
   margin-block-start: -1px;
-  block-size: 1px;
   background-color: #fff;
-  inline-size: 0;
   transition: inline-size 0.3s ease-in;
+  block-size: 1px;
+  inline-size: 0;
 }
 
 .search-form__label:hover .search-form__label-text::after {
@@ -213,8 +212,8 @@ button:hover {
 }
 
 .content__list::-webkit-scrollbar-thumb {
-  background-color: darkgrey;
   outline: 1px solid slategrey;
+  background-color: darkgrey;
 }
 
 .title {
@@ -243,15 +242,15 @@ button:hover {
 
 .content__card-link {
   display: block;
+  margin: 2px;
   color: #fff;
   text-decoration: none;
-  margin: 2px;
 }
 
 .content__card-link:hover {
   text-decoration: underline;
-  text-underline-offset: 3px;
   text-decoration-skip-ink: none;
+  text-underline-offset: 3px;
 }
 
 .content__card-link:focus {
@@ -281,11 +280,11 @@ button:hover {
 }
 
 .content__video-card-title {
+  padding-block-end: 6px;
   overflow: hidden;
   font-family: Oswald, sans-serif;
   font-size: 30px;
   line-height: 30px;
-  padding-block-end: 6px;
   text-transform: uppercase;
   text-overflow: ellipsis;
 }
@@ -300,10 +299,10 @@ button:hover {
 }
 
 .more-button {
+  margin: 3px;
+  padding-inline: 146px;
+  padding-block: 6px;
   text-align: center;
   text-wrap: nowrap;
   white-space: nowrap;
-  padding-block: 6px;
-  padding-inline: 146px;
-  margin: 3px;
 }
